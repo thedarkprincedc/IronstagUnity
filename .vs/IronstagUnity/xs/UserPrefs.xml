@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{10EC0A82-94A2-8AD0-11CA-4CE28D11456A}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/TrackingCameraControllerScript.cs">
+    <Files>
+      <File FileName="Assets/FlintControllerScript.cs" Line="11" Column="35" />
+      <File FileName="../test2/Assets/Scripts/FlintControllerScript.cs" Line="16" Column="5" />
+      <File FileName="Assets/TrackingCameraControllerScript.cs" Line="19" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
