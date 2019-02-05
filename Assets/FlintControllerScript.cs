@@ -9,6 +9,13 @@ public class FlintControllerScript : MonoBehaviour
     float maxSpeed = 10f;
     bool facingRight = true;
     public float jumpForce = 300f;
+
+    public GameObject flintBullet;
+    public Vector2 bulletStartPosition;
+    Vector2 bulletPos;
+    public float fireRate = 0.5f;
+    float nextFire = 0.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +32,7 @@ public class FlintControllerScript : MonoBehaviour
         }
         if (Input.GetButtonDown("Fire1")){
             anim.SetBool("bShoot", true);
+            Fire();
         }
         if (Input.GetButtonUp("Fire1")){
             anim.SetBool("bShoot", false);
@@ -37,8 +45,7 @@ public class FlintControllerScript : MonoBehaviour
         rigidbody2D.velocity = new Vector2(move * maxSpeed, rigidbody2D.velocity.y);
         if (move > 0 && !facingRight){
             Flip();
-        }
-        else if (move < 0 && facingRight){
+        } else if (move < 0 && facingRight){
             Flip();
         }
     }
@@ -48,5 +55,21 @@ public class FlintControllerScript : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+
+    void Fire(){
+        bulletPos = transform.position;
+        if (facingRight)
+        {
+            bulletPos += new Vector2(this.bulletStartPosition.x, this.bulletStartPosition.y);
+            GameObject obj = Instantiate(flintBullet, bulletPos, Quaternion.identity);
+
+        }
+        else
+        {
+            bulletPos += new Vector2(-this.bulletStartPosition.x, this.bulletStartPosition.y);
+            GameObject obj = Instantiate(flintBullet, bulletPos, Quaternion.identity);
+            obj.GetComponent<Bullet>().velX = -5;
+        }
     }
 }

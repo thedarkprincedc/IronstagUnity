@@ -60,7 +60,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Bullet.cs" />
     <Compile Include="Assets\FlintControllerScript.cs" />
+    <Compile Include="Assets\MainController.cs" />
+    <Compile Include="Assets\Storyboard.cs" />
+    <Compile Include="Assets\TitleScreenController.cs" />
     <Compile Include="Assets\TrackingCameraControllerScript.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/Shared/Unity/IronstagUnity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
