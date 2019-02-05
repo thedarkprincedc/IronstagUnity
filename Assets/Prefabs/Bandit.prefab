@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1484250268787753891}
   - component: {fileID: 1484250268787753889}
   - component: {fileID: 1484250268787753890}
+  - component: {fileID: 4250951398729633193}
   m_Layer: 0
   m_Name: Bandit
   m_TagString: Untagged
@@ -121,7 +122,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1484250268787753890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -138,7 +139,7 @@ BoxCollider2D:
   m_Offset: {x: -0.1287393, y: 0.2823278}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.29, y: 0}
     oldSize: {x: 0.64, y: 0.61}
     newSize: {x: 0.64, y: 0.61}
     adaptiveTilingThreshold: 0.5
@@ -148,3 +149,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32799643, y: 0.5585584}
   m_EdgeRadius: 0
+--- !u!114 &4250951398729633193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484250268787753902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c33441f1ff0d4fd1b7bda99d7292123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flintBullet: {fileID: 8220194252058924255, guid: e7f339588a9274e2d9af132567e13a6c,
+    type: 3}
+  bulletStartPosition: {x: 0, y: 0}

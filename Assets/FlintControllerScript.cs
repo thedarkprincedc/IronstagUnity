@@ -15,12 +15,15 @@ public class FlintControllerScript : MonoBehaviour
     Vector2 bulletPos;
     public float fireRate = 0.5f;
     float nextFire = 0.0f;
+    public AudioClip bulletSound;
+    AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         rigidbody2D = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -32,7 +35,6 @@ public class FlintControllerScript : MonoBehaviour
         }
         if (Input.GetButtonDown("Fire1")){
             anim.SetBool("bShoot", true);
-            Fire();
         }
         if (Input.GetButtonUp("Fire1")){
             anim.SetBool("bShoot", false);
@@ -56,17 +58,14 @@ public class FlintControllerScript : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
-
-    void Fire(){
+ 
+    public void Fire(){
+        audioSource.PlayOneShot(bulletSound);
         bulletPos = transform.position;
-        if (facingRight)
-        {
+        if (facingRight){
             bulletPos += new Vector2(this.bulletStartPosition.x, this.bulletStartPosition.y);
             GameObject obj = Instantiate(flintBullet, bulletPos, Quaternion.identity);
-
-        }
-        else
-        {
+        } else {
             bulletPos += new Vector2(-this.bulletStartPosition.x, this.bulletStartPosition.y);
             GameObject obj = Instantiate(flintBullet, bulletPos, Quaternion.identity);
             obj.GetComponent<Bullet>().velX = -5;

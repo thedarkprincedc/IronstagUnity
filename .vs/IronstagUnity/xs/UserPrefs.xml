@@ -1,13 +1,16 @@
 ﻿<Properties StartupConfiguration="{10EC0A82-94A2-8AD0-11CA-4CE28D11456A}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bullet.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/HealthBar.cs">
     <Files>
       <File FileName="Assets/Storyboard.cs" Line="16" Column="6" />
       <File FileName="Assets/MainController.cs" Line="1" Column="1" />
-      <File FileName="Assets/FlintControllerScript.cs" Line="71" Column="15" />
+      <File FileName="Assets/FlintControllerScript.cs" Line="64" Column="16" />
       <File FileName="Assets/TitleScreenController.cs" Line="44" Column="1" />
       <File FileName="Assets/TrackingCameraControllerScript.cs" Line="14" Column="28" />
-      <File FileName="Assets/Bullet.cs" Line="1" Column="1" />
+      <File FileName="Assets/Bullet.cs" Line="21" Column="11" />
+      <File FileName="Assets/EBandit.cs" Line="1" Column="1" />
+      <File FileName="Assets/EMachineGunBoss.cs" Line="1" Column="1" />
+      <File FileName="Assets/HealthBar.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
