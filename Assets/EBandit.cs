@@ -14,6 +14,8 @@ public class EBandit : MonoBehaviour
     private GameObject playerObj = null;
     float someScale;
     Vector2 bulletPos;
+
+    public bool bDead = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +39,13 @@ public class EBandit : MonoBehaviour
             facingRight = true;
         }
        // RunBanditAI();
+    }
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Bullet"){
+            anim.SetBool("bDead", true);
+            Object.Destroy(other.gameObject);
+        }
     }
     void RunBanditAI(){
         bulletPos = transform.position;

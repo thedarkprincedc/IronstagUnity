@@ -63,8 +63,11 @@
     <Compile Include="Assets\Bullet.cs" />
     <Compile Include="Assets\EBandit.cs" />
     <Compile Include="Assets\EMachineGunBoss.cs" />
+    <Compile Include="Assets\ExplodingBarrelController.cs" />
+    <Compile Include="Assets\ExplosionController.cs" />
     <Compile Include="Assets\FlintControllerScript.cs" />
     <Compile Include="Assets\HealthBar.cs" />
+    <Compile Include="Assets\IDamageable.cs" />
     <Compile Include="Assets\MainController.cs" />
     <Compile Include="Assets\Storyboard.cs" />
     <Compile Include="Assets\TitleScreenController.cs" />

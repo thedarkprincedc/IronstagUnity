@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlintControllerScript : MonoBehaviour
+public class FlintControllerScript : MonoBehaviour, IDamageable<float>
 {
     Animator anim;
     Rigidbody2D rigidbody2D;
@@ -70,5 +70,12 @@ public class FlintControllerScript : MonoBehaviour
             GameObject obj = Instantiate(flintBullet, bulletPos, Quaternion.identity);
             obj.GetComponent<Bullet>().velX = -5;
         }
+    }
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        
+    }
+    public void Damage(float damageTaken){
+        
     }
 }
