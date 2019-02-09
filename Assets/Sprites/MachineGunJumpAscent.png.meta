@@ -102,17 +102,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 11
-        width: 64
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 0
+        width: 68
+        height: 73
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86122501e609f4aa0945e71afd0582a8
+      spriteID: 3eed3d5222a0044818ae1e28ed701046
       vertices: []
       indices: 
       edges: []
@@ -121,18 +121,18 @@ TextureImporter:
       name: MachineGunJumpAscent_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 11
-        width: 64
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 68
+        y: 0
+        width: 68
+        height: 73
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a50cc4ad3d56a48d1b83a2b76d4e2a22
+      spriteID: da3edbd79a68240e193a5af196d5c6b0
       vertices: []
       indices: 
       edges: []
@@ -141,18 +141,18 @@ TextureImporter:
       name: MachineGunJumpAscent_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 11
-        width: 64
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 136
+        y: 0
+        width: 68
+        height: 73
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b800ad53d6b0347348b70e7f7688a89c
+      spriteID: 1d054b6c2a558498ea0cd9d00c573e35
       vertices: []
       indices: 
       edges: []

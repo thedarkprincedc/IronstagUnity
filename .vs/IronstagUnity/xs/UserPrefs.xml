@@ -2,18 +2,10 @@
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ExplodingBarrelController.cs">
     <Files>
-      <File FileName="Assets/Storyboard.cs" Line="16" Column="6" />
-      <File FileName="Assets/MainController.cs" Line="1" Column="1" />
-      <File FileName="Assets/FlintControllerScript.cs" Line="67" Column="12" />
-      <File FileName="Assets/TitleScreenController.cs" Line="44" Column="1" />
-      <File FileName="Assets/TrackingCameraControllerScript.cs" Line="14" Column="28" />
-      <File FileName="Assets/Bullet.cs" Line="21" Column="11" />
-      <File FileName="Assets/EBandit.cs" Line="14" Column="4" />
+      <File FileName="Assets/EBandit.cs" Line="45" Column="9" />
+      <File FileName="Assets/VultureController.cs" Line="28" Column="15" />
       <File FileName="Assets/EMachineGunBoss.cs" Line="1" Column="1" />
-      <File FileName="Assets/HealthBar.cs" Line="16" Column="56" />
-      <File FileName="Assets/IDamageable.cs" Line="6" Column="32" />
-      <File FileName="Assets/ExplodingBarrelController.cs" Line="39" Column="5" />
-      <File FileName="Assets/ExplosionController.cs" Line="1" Column="1" />
+      <File FileName="Assets/ExplodingBarrelController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

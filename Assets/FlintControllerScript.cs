@@ -17,6 +17,13 @@ public class FlintControllerScript : MonoBehaviour, IDamageable<float>
     float nextFire = 0.0f;
     public AudioClip bulletSound;
     AudioSource audioSource;
+    public bool bTakeDamage = false;
+
+    bool grounded = false;
+    public Transform groundCheck;
+    float groundRadius = 0.45f;
+    public LayerMask whatIsGround;
+    float isFalling;
 
     // Start is called before the first frame update
     void Start()
@@ -29,10 +36,14 @@ public class FlintControllerScript : MonoBehaviour, IDamageable<float>
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump")){
-            //anim.SetBool("Ground", false);
+        if (grounded && Input.GetButtonDown("Jump")){
+            anim.SetBool("Ground", false);
             rigidbody2D.AddForce(new Vector2(0, jumpForce));
         }
+        //if (!grounded && Input.GetButtonUp("Jump"))
+        //{
+        //    //anim.SetBool("isFalling", true);
+        //}
         if (Input.GetButtonDown("Fire1")){
             anim.SetBool("bShoot", true);
         }
@@ -42,6 +53,9 @@ public class FlintControllerScript : MonoBehaviour, IDamageable<float>
     }
     void FixedUpdate()
     {
+        grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
+        anim.SetBool("Ground", grounded);
+
         float move = Input.GetAxis("Horizontal");
         anim.SetFloat("Speed", Mathf.Abs(move));
         rigidbody2D.velocity = new Vector2(move * maxSpeed, rigidbody2D.velocity.y);
@@ -73,9 +87,8 @@ public class FlintControllerScript : MonoBehaviour, IDamageable<float>
     }
     void OnCollisionEnter2D(Collision2D other)
     {
-        
     }
     public void Damage(float damageTaken){
-        
+  
     }
 }
