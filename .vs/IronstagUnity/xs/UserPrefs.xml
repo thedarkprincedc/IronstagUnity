@@ -1,11 +1,21 @@
 ﻿<Properties StartupConfiguration="{10EC0A82-94A2-8AD0-11CA-4CE28D11456A}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ExplodingBarrelController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bullet.cs">
     <Files>
-      <File FileName="Assets/EBandit.cs" Line="45" Column="9" />
-      <File FileName="Assets/VultureController.cs" Line="28" Column="15" />
-      <File FileName="Assets/EMachineGunBoss.cs" Line="1" Column="1" />
-      <File FileName="Assets/ExplodingBarrelController.cs" Line="1" Column="1" />
+      <File FileName="Assets/VultureController.cs" Line="39" Column="20" />
+      <File FileName="Assets/TrackingCameraControllerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/TitleScreenController.cs" Line="73" Column="10" />
+      <File FileName="Assets/Storyboard.cs" Line="6" Column="2" />
+      <File FileName="Assets/MainController.cs" Line="20" Column="42" />
+      <File FileName="Assets/IDamageable.cs" Line="1" Column="1" />
+      <File FileName="Assets/HealthBar.cs" Line="1" Column="1" />
+      <File FileName="Assets/FlintControllerScript.cs" Line="64" Column="17" NotebookId="1" />
+      <File FileName="Assets/ExplosionController.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/ExplodingBarrelController.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/EMachineGunBoss.cs" Line="63" Column="12" NotebookId="1" />
+      <File FileName="Assets/EBandit.cs" Line="45" Column="9" NotebookId="1" />
+      <File FileName="Assets/CactusController.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/Bullet.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

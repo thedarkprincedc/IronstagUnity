@@ -8,7 +8,7 @@ public class FlintControllerScript : MonoBehaviour, IDamageable<float>
     Rigidbody2D rigidbody2D;
     float maxSpeed = 10f;
     bool facingRight = true;
-    public float jumpForce = 300f;
+    public float jumpForce = 350f;
 
     public GameObject flintBullet;
     public Vector2 bulletStartPosition;
@@ -55,6 +55,8 @@ public class FlintControllerScript : MonoBehaviour, IDamageable<float>
     {
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         anim.SetBool("Ground", grounded);
+        anim.SetFloat("vSpeed", rigidbody2D.velocity.y);
+        anim.SetBool("isFalling", (rigidbody2D.velocity.y < 0));
 
         float move = Input.GetAxis("Horizontal");
         anim.SetFloat("Speed", Mathf.Abs(move));

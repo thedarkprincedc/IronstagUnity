@@ -25,6 +25,7 @@ public class EBandit : MonoBehaviour
             playerObj = GameObject.Find("FlintIdle");
         }
         someScale = transform.localScale.x;
+        bulletStartPosition.y = transform.position.y + 3;
     }
 
     // Update is called once per frame
@@ -38,27 +39,40 @@ public class EBandit : MonoBehaviour
             transform.localScale = new Vector2(someScale, transform.localScale.y);
             facingRight = true;
         }
-       // RunBanditAI();
+       RunBanditAI();
     }
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "Bullet"){
-            anim.SetBool("bDead", true);
-            Object.Destroy(other.gameObject);
-        }
+        //if (other.gameObject. == "Enemy")
+        //{
+        //    Physics2D.IgnoreCollision(other.gameObject.GetComponent<Collider2D>(),
+        //                              this.GetComponent<Collider2D>());
+        //    //Physics.IgnoreCollision(other.gameObject.collider, this.GetComponent<Collider2d>);
+        //}
+        //if (other.gameObject.tag == "Bullet"){
+        //    anim.SetBool("bDead", true);
+        //    Object.Destroy(other.gameObject);
+        //}
     }
+    float nextFire = 0f;
+    float fireRate = 2.5f;
     void RunBanditAI(){
-        bulletPos = transform.position;
-        if (facingRight)
-        {
-            bulletPos += new Vector2(this.bulletStartPosition.x, this.bulletStartPosition.y);
-            GameObject obj = Instantiate(flintBullet, bulletPos, Quaternion.identity);
+        
+        if(Time.time > nextFire){
+            bulletPos = transform.position;
+            if (facingRight)
+            {
+                bulletPos += new Vector2(this.bulletStartPosition.x, this.bulletStartPosition.y);
+                GameObject obj = Instantiate(flintBullet, bulletPos, Quaternion.identity);
+            }
+            else
+            {
+                bulletPos += new Vector2(-this.bulletStartPosition.x, this.bulletStartPosition.y);
+                GameObject obj = Instantiate(flintBullet, bulletPos, Quaternion.identity);
+                obj.GetComponent<Bullet>().velX = -5;
+            }
+            nextFire = Time.time + fireRate;
         }
-        else
-        {
-            bulletPos += new Vector2(-this.bulletStartPosition.x, this.bulletStartPosition.y);
-            GameObject obj = Instantiate(flintBullet, bulletPos, Quaternion.identity);
-            obj.GetComponent<Bullet>().velX = -5;
-        }
+      
     }
 }

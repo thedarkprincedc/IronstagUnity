@@ -161,6 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c33441f1ff0d4fd1b7bda99d7292123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flintBullet: {fileID: 8220194252058924255, guid: e7f339588a9274e2d9af132567e13a6c,
+  flintBullet: {fileID: 4329890447343211637, guid: d646d7ab1ed5c46269c73b7cc00326a2,
     type: 3}
   bulletStartPosition: {x: 0, y: 0}
+  bDead: 0

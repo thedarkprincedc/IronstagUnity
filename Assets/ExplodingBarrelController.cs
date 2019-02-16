@@ -18,7 +18,7 @@ public class ExplodingBarrelController : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D other){
         //Debug.Log(other.gameObject.tag);
-        Debug.Log(other.gameObject.tag);
+       // Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag == "Bullet")
         {
             explode();
